@@ -21,6 +21,21 @@ This repository contains the initial stage of a student project to build a clone
 | 10. Console 1.0 | [console.py](https://github.com/justinmajetich/AirBnB_clone/blob/dev/console.py) [/models/engine/file_storage.py](https://github.com/justinmajetich/AirBnB_clone/blob/dev/models/engine/file_storage.py) | Update the console and file storage system to work dynamically with all  classes update file storage |
 <br>
 <br>
+
+<center><h3>Repository Contents by Project Task</h3> </center>
+
+| Tasks | Files | Description |
+| ----- | ----- | ------ |
+| 0: Prepare your web servers | [0-setup_web_static.sh](https://github.com/HichamLuffy/AirBnB_clone_v2/blob/master/0-setup_web_static.sh) | Web server setup script with Nginx |
+| 1: Compress before sending | [1-pack_web_static.py](https://github.com/HichamLuffy/AirBnB_clone_v2/blob/master/1-pack_web_static.py) | Fabric script for web_static archive|
+| 2: Deploy archive! | [2-do_deploy_web_static.py](https://github.com/HichamLuffy/AirBnB_clone_v2/blob/master/2-do_deploy_web_static.py) | Fabric script for deploying web_static archive |
+| 3. Full deployment | [3-deploy_web_static.py](https://github.com/HichamLuffy/AirBnB_clone_v2/blob/master/3-deploy_web_static.py) | Fabric script for deploying web_static archive.|
+| 4. Keep it clean! | [100-clean_web_static.py](https://github.com/HichamLuffy/AirBnB_clone_v2/blob/master/100-clean_web_static.py) | Fabric script for cleaning outdated archives|
+| 5. Puppet for setup | [101-setup_web_static.pp](https://github.com/HichamLuffy/AirBnB_clone_v2/blob/master/101-setup_web_static.pp) | Puppet script for setting up web_static|
+
+<br>
+<br>
+
 <center> <h2>General Use</h2> </center>
 
 1. First clone this repository.
