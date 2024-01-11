@@ -13,26 +13,8 @@ sudo mkdir -p "/data/web_static/shared/"
 
 body="Holberton School"
 index_content="<html>
-  <head>
-    <style>
-      body {
-        font-family: 'Arial', sans-serif;
-        background-color: #f4f4f4;
-        text-align: center;
-        margin-top: 100px;
-      }
-      h1 {
-        color: #3498db;
-      }
-      p {
-        color: #2c3e50;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>$body</h1>
-    <p>Welcome to the cool Holberton School web page!</p>
-  </body>
+  <head></head>
+  <body>$body</body>
 </html>"
 
 echo "$index_content" | sudo tee "/data/web_static/releases/test/index.html" > /dev/null
