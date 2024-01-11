@@ -22,7 +22,7 @@ echo "$index_content" | sudo tee "/data/web_static/releases/test/index.html" > /
 rm -rf /data/web_static/current
 ln -sf /data/web_static/releases/test/ /data/web_static/current
 
-sudo chown -hR $(whoami):$(whoami) "/data/"
+sudo chown -R ubuntu:ubuntu "/data/"
 
 sudo wget -q -O /etc/nginx/sites-available/default http://exampleconfig.com/static/raw/nginx/ubuntu20.04/etc/nginx/sites-available/default
 config="/etc/nginx/sites-available/default"
