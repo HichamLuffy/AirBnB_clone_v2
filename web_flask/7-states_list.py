@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
 """ module numbr roote """
 from flask import Flask
 from flask import render_template
@@ -54,6 +53,7 @@ def number_odd_or_even(n):
     else:
         answer = "odd"
     return render_template('6-number_odd_or_even.html', n=n, answer=answer)
+
 
 @app.route('/states_list', strict_slashes=False)
 def states_list():
