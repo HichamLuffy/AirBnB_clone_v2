@@ -84,7 +84,7 @@ def states(id=None):
     if id is not None:
         state = storage.all(State, id)
         with_id = True
-        if state is None:
+        if len(state) == 0:
             notfound = True
     else:
         states = storage.all(State)
