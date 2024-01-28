@@ -9,25 +9,19 @@ from models import *
 app = Flask(__name__)
 
 
-@app.route('/states', strict_slashes=False)
-@app.route('/states/<id>', strict_slashes=False)
+@app.route("/states", strict_slashes=False)
+@app.route("/states/<id>", strict_slashes=False)
 def states(id=None):
-    """ def doc """
-    notfound = False
+    """ def states """
+    states = storage.all(State)
     if id is not None:
-        state = storage.get(State, id)
-        id = "States." + id
-        with_id = True
-        if state is None:
-            notfound = True
-    else:
-        states = storage.all(State)
-        with_id = False
-    return render_template('9-states.html', states=states,
-                           with_id=with_id, not_found=notfound)
+        id = "State." + id
+    return render_template("9-states.html", states=states, state_id=id)
+
 
 @app.teardown_appcontext
 def tear_db(e):
+    """ tear db """
     storage.close()
 
 
