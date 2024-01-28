@@ -14,8 +14,7 @@ app = Flask(__name__)
 def states(id=None):
     """ def states """
     states = storage.all(State)
-    if id is not None:
-        id = "State." + id
+    state_id = "State." + id if id else None
     return render_template("9-states.html", states=states, state_id=id)
 
 
