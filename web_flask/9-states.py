@@ -90,7 +90,7 @@ def states(id=None):
         states = storage.all(State)
         with_id = False
     return render_template('9-states.html', states=states,
-                           with_id=with_id, notfound=notfound)
+                           with_id=with_id, not_found=notfound)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
